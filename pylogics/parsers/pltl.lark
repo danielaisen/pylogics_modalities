@@ -5,17 +5,20 @@ start: pltlf_formula
 ?pltlf_implication: pltlf_or (IMPLY pltlf_or)*
 ?pltlf_or:          pltlf_and (OR pltlf_and)*
 ?pltlf_and:         pltlf_since (AND pltlf_since)*
-?pltlf_since:       pltlf_unaryop (SINCE pltlf_unaryop)*
+?pltlf_since:       pltlf_triggers (SINCE pltlf_triggers)*
+?pltlf_triggers:    pltlf_unaryop (TRIGGERS pltlf_unaryop)*
 
 ?pltlf_unaryop:    pltlf_historically
              |     pltlf_once
              |     pltlf_before
+             |     pltlf_weakbefore
              |     pltlf_not
              |     pltlf_wrapped
 
 ?pltlf_historically: HISTORICALLY pltlf_unaryop
 ?pltlf_once:         ONCE pltlf_unaryop
 ?pltlf_before:       BEFORE pltlf_unaryop
+?pltlf_weakbefore:   WEAKBEFORE pltlf_unaryop
 ?pltlf_not:          NOT pltlf_unaryop
 ?pltlf_wrapped:      pltlf_atom
              |       LEFT_PARENTHESIS pltlf_formula RIGHT_PARENTHESIS
@@ -35,9 +38,11 @@ pltlf_start: START
 
 // Operators must not be part of a word
 SINCE.2: /S(?=[ "\(])/
+TRIGGERS.2: /T(?=[ "\(])/
 HISTORICALLY.2: /H(?=[ "\(])/
 ONCE.2: /O(?=[ "\(])/
 BEFORE.2: /Y(?=[ "\(])/
+WEAKBEFORE.2: /Z(?=[ "\(])/
 FIRST.2: /first/
 START.2: /start/
 

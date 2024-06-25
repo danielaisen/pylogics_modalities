@@ -1,0 +1,20 @@
+,
+    Triggers,
+    WeakYesterday,
+
+
+    
+    @classmethod
+    def pltlf_triggers(cls, args):
+        return cls._starred_binaryop(args, Triggers, cls.pltlf_triggers.__name__)
+
+
+class WeakYesterday(_PLTLUnaryOp):
+    """The "weakYesterday" formula in PLTL."""
+
+    SYMBOL = "weakYesterday"
+
+class Triggers(_PLTLUnaryOp):
+    """The "triggers" formula in PLTL."""
+
+    SYMBOL = "triggers"

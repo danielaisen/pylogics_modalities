@@ -37,11 +37,13 @@ from pylogics.syntax.base import (
 from pylogics.syntax.pltl import (
     Atomic,
     Before,
+    WeakBefore,
     Historically,
     Once,
     PropositionalFalse,
     PropositionalTrue,
     Since,
+    Triggers,
     Start,
 )
 
@@ -78,6 +80,10 @@ class _PLTLTransformer(AbstractTransformer):
         return cls._starred_binaryop(args, Since, cls.pltlf_since.__name__)
 
     @classmethod
+    def pltlf_triggers(cls, args):
+        return cls._starred_binaryop(args, Triggers, cls.pltlf_triggers.__name__)
+
+    @classmethod
     def pltlf_historically(cls, args):
         return cls._process_unaryop(args, Historically)
 
@@ -88,6 +94,10 @@ class _PLTLTransformer(AbstractTransformer):
     @classmethod
     def pltlf_before(cls, args):
         return cls._process_unaryop(args, Before)
+
+    @classmethod
+    def pltlf_weakBefore(cls, args):
+        return cls._process_unaryop(args, WeakBefore)
 
     @classmethod
     def pltlf_not(cls, args):

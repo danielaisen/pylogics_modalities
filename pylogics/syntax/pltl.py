@@ -116,6 +116,16 @@ class Before(_PLTLUnaryOp):
     SYMBOL = "before"
 
 
+class WeakBefore(_PLTLUnaryOp):
+    """The "weakBefore" formula in PLTL."""
+
+    SYMBOL = "weakBefore"
+
+class Triggers(_PLTLBinaryOp):
+    """The "triggers" formula in PLTL."""
+
+    SYMBOL = "triggers"
+
 class Since(_PLTLBinaryOp):
     """The "since" formula in PLTL."""
 

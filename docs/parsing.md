@@ -126,9 +126,11 @@ pltl_formula: pltl_formula <-> pltl_formula  // equivalence
             | !pltl_formula                  // negation
             | ( pltl_formula )               // brackets
             | pltl_formula S pltl_formula    // since 
+            | pltl_formula T pltl_formula    // triggers 
             | H pltl_formula                 // historically
             | O pltl_formula                 // once 
             | Y pltl_formula                 // before 
+            | Z pltl_formula                 // weakBefore 
             | true                           // boolean propositional constant
             | false                          // boolean propositional constant
             | tt                             // boolean logical constant
@@ -146,6 +148,7 @@ parse_pltl("false")
 parse_pltl("a")
 parse_pltl("b")
 parse_pltl("Y(a)")
+parse_pltl("Z(a)")
 parse_pltl("O(b)")
 parse_pltl("H(a)")
 parse_pltl("a S b")
