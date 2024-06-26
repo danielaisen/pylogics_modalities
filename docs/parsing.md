@@ -130,7 +130,7 @@ pltl_formula: pltl_formula <-> pltl_formula  // equivalence
             | H pltl_formula                 // historically
             | O pltl_formula                 // once 
             | Y pltl_formula                 // before 
-            | Z pltl_formula                 // weakBefore 
+            | Z pltl_formula                 // weakbefore 
             | true                           // boolean propositional constant
             | false                          // boolean propositional constant
             | tt                             // boolean logical constant

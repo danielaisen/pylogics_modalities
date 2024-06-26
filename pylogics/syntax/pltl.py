@@ -119,7 +119,7 @@ class Before(_PLTLUnaryOp):
 class WeakBefore(_PLTLUnaryOp):
     """The "weakBefore" formula in PLTL."""
 
-    SYMBOL = "weakBefore"
+    SYMBOL = "weakbefore"
 
 class Triggers(_PLTLBinaryOp):
     """The "triggers" formula in PLTL."""

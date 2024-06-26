@@ -157,14 +157,14 @@ start: pltlf_formula
 ?pltlf_unaryop:    pltlf_historically
              |     pltlf_once
              |     pltlf_before
-             |     pltlf_weakBefore
+             |     pltlf_weakbefore
              |     pltlf_not
              |     pltlf_wrapped
 
 ?pltlf_historically: HISTORICALLY pltlf_unaryop
 ?pltlf_once:         ONCE pltlf_unaryop
 ?pltlf_before:       BEFORE pltlf_unaryop
-?pltlf_weakBefore:   WEAKBEFORE pltlf_unaryop
+?pltlf_weakbefore:   WEAKBEFORE pltlf_unaryop
 ?pltlf_not:          NOT pltlf_unaryop
 ?pltlf_wrapped:      pltlf_atom
              |       LEFT_PARENTHESIS pltlf_formula RIGHT_PARENTHESIS
