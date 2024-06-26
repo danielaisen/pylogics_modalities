@@ -96,7 +96,7 @@ class _PLTLTransformer(AbstractTransformer):
         return cls._process_unaryop(args, Before)
 
     @classmethod
-    def pltlf_weakBefore(cls, args):
+    def pltlf_weakbefore(cls, args):
         return cls._process_unaryop(args, WeakBefore)
 
     @classmethod
