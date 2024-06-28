@@ -33,7 +33,7 @@ jobs:
     - name: Build package
       run: python -m build
     - name: Publish package
-      uses: pypi-AgEIcHlwaS5vcmcCJDM5Y2Y3NjNhLTkxMjMtNGNkYi05YTM3LTc1ZWY5Mzk0YzhmYQACKlszLCIzNTg5MDdmMy1mYjRhLTQ3YTktOWU2Mi05NzNiNTdkMGMzZTUiXQAABiCYsjHpEWYUr1zV3xYWz_HMWz2l5pFMhz7TNVKKgP7OwQ
+      uses: pypi-AgEIcHlwaS5vcmcCJDM5Y2Y3NjNh
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
