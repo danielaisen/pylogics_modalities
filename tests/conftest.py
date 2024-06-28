@@ -28,13 +28,13 @@ from pathlib import Path
 import pytest
 from hypothesis import HealthCheck, settings
 
-import pylogics
-from pylogics.syntax.base import reset_cache
+import pylogics_modalities
+from pylogics_modalities.syntax.base import reset_cache
 
 _current_filepah = inspect.getframeinfo(inspect.currentframe()).filename  # type: ignore
 TEST_DIRECTORY = Path(_current_filepah).absolute().parent
 ROOT_DIRECTORY = TEST_DIRECTORY.parent
-LIBRARY_DIRECTORY = ROOT_DIRECTORY / pylogics.__name__
+LIBRARY_DIRECTORY = ROOT_DIRECTORY / pylogics_modalities.__name__
 DOCS_DIRECTORY = ROOT_DIRECTORY / "docs"
 
 

@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 """Tests on the pylogics.exceptions module."""
-from pylogics.exceptions import ParsingError
+from pylogics_modalities.exceptions import ParsingError
 
 
 def test_parsing_exception_init():

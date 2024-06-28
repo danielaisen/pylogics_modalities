@@ -24,7 +24,7 @@
 """Tests on the pylogics.helpers module."""
 import pickle
 
-from pylogics.helpers.cache_hash import Hashable
+from pylogics_modalities.helpers.cache_hash import Hashable
 
 
 class MyHashable(metaclass=Hashable):

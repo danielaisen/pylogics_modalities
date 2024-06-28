@@ -25,10 +25,10 @@
 from hypothesis import HealthCheck, given, settings
 from hypothesis.extra.lark import from_lark
 
-from pylogics.parsers.ltl import __parser as ltl_parser
-from pylogics.parsers.ltl import parse_ltl
-from pylogics.syntax.base import Logic
-from pylogics.utils.to_string import to_string
+from pylogics_modalities.parsers.ltl import __parser as ltl_parser
+from pylogics_modalities.parsers.ltl import parse_ltl
+from pylogics_modalities.syntax.base import Logic
+from pylogics_modalities.utils.to_string import to_string
 
 
 @given(from_lark(ltl_parser._parser))

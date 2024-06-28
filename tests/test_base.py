@@ -24,7 +24,7 @@
 """Tests on the pylogics.syntax.ltl module."""
 import pytest
 
-from pylogics.syntax.base import FalseFormula, Logic, Not, TrueFormula
+from pylogics_modalities.syntax.base import FalseFormula, Logic, Not, TrueFormula
 
 
 @pytest.mark.parametrize("logic", list(Logic))

@@ -22,7 +22,7 @@
 # SOFTWARE.
 
 """Test introduction documentation page."""
-from pylogics.semantics.pl import evaluate_pl
+from pylogics_modalities.semantics.pl import evaluate_pl
 from tests.conftest import DOCS_DIRECTORY
 from tests.test_docs.base import BasePythonMarkdownDocs
 

@@ -25,10 +25,10 @@
 from hypothesis import given
 from hypothesis.extra.lark import from_lark
 
-from pylogics.parsers.ldl import __parser as ldl_parser
-from pylogics.parsers.ldl import parse_ldl
-from pylogics.syntax.base import Logic
-from pylogics.utils.to_string import to_string
+from pylogics_modalities.parsers.ldl import __parser as ldl_parser
+from pylogics_modalities.parsers.ldl import parse_ldl
+from pylogics_modalities.syntax.base import Logic
+from pylogics_modalities.utils.to_string import to_string
 from tests.conftest import suppress_health_checks_for_lark
 
 
